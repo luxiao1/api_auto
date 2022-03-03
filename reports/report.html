@@ -154,15 +154,15 @@
             </li>
             <li class="list-group-item">
                 <button type="button" class="btn btn-success">开始时间</button>
-                <span class="text-dark">2022-03-01 22:23:00</span>
+                <span class="text-dark">2022-03-03 16:57:17</span>
             </li>
             <li class="list-group-item">
                 <button type="button" class="btn btn-success">执行时间</button>
-                <span class="text-dark">7.27 S</span>
+                <span class="text-dark">4.62 S</span>
             </li>
             <li class="list-group-item">
                 <button type="button" class="btn btn-success">用例总数</button>
-                <span class="text-dark">14</span>
+                <span class="text-dark">22</span>
             </li>
 
 
@@ -173,7 +173,7 @@
 
             <li class="list-group-item">
                 <button type="button" class="btn btn-success">成功用例</button>
-                <span class="text-success">14</span>
+                <span class="text-success">16</span>
             </li>
             <li class="list-group-item">
                 <button type="button" class="btn btn-warning">失败用例</button>
@@ -181,7 +181,7 @@
             </li>
             <li class="list-group-item">
                 <button type="button" class="btn btn-danger">错误用例</button>
-                <span class="text-danger">0</span>
+                <span class="text-danger">6</span>
             </li>
             <li class="list-group-item">
                 <button type="button" class="btn btn-secondary">跳过用例</button>
@@ -223,11 +223,13 @@
                     <select id="testClass">
                         <option>所有</option>
                         
+                            <option>TestInvestFlow</option>
+                        
                             <option>TestAudit</option>
                         
-                            <option>RegisterTestcase</option>
-                        
                             <option>TestRecharge</option>
+                        
+                            <option>RegisterTestcase</option>
                         
                     </select>
 
@@ -258,7 +260,7 @@
                     <td class="TestAudit">TestAudit</td>
                     <td>test_audit_001</td>
                     <td>审核成功-通过</td>
-                    <td>0.51s</td>
+                    <td>0.242s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -284,7 +286,7 @@
                     <td class="TestAudit">TestAudit</td>
                     <td>test_audit_002</td>
                     <td>审核成功-不通过</td>
-                    <td>0.541s</td>
+                    <td>0.247s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -310,7 +312,7 @@
                     <td class="TestAudit">TestAudit</td>
                     <td>test_audit_003</td>
                     <td>项目id为空</td>
-                    <td>0.429s</td>
+                    <td>0.201s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -336,7 +338,7 @@
                     <td class="TestAudit">TestAudit</td>
                     <td>test_audit_004</td>
                     <td>项目id不是整数</td>
-                    <td>0.422s</td>
+                    <td>0.193s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -359,10 +361,561 @@
             
                 <tr>
                     <td>5</td>
+                    <td class="TestInvestFlow">TestInvestFlow</td>
+                    <td>test_01register_normal_user</td>
+                    <td>1.注册普通融资用户</td>
+                    <td>0.344s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7" class="small text-muted" style=" word-wrap:break-word; word-break:break-all">
+                        
+
+                            <pre>test_01register_normal_user (test_invest_flow.TestInvestFlow)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>6</td>
+                    <td class="TestInvestFlow">TestInvestFlow</td>
+                    <td>test_02login_normal_user</td>
+                    <td>2.登录普通的融资用户</td>
+                    <td>0.143s</td>
+                    
+                        <td class="text-success">成功</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7" class="small text-muted" style=" word-wrap:break-word; word-break:break-all">
+                        
+
+                            <pre>test_02login_normal_user (test_invest_flow.TestInvestFlow)执行——>【通过】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>7</td>
+                    <td class="TestInvestFlow">TestInvestFlow</td>
+                    <td>test_03_loan</td>
+                    <td>3.创建融资项目</td>
+                    <td>0.00364s</td>
+                    
+                        <td class="text-danger">错误</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7" class="small text-muted" style=" word-wrap:break-word; word-break:break-all">
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 628, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\testcase\test_invest_flow.py", line 65, in test_03_loan
+    self.flow(item)
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 36, in flow
+    self.process_test_data()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 46, in process_test_data
+    self.replace_args()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 65, in replace_args
+    raise e
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 61, in replace_args
+    self._case['request_data'] = json.loads(self._case['request_data'])
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\json\__init__.py", line 348, in loads
+    return _default_decoder.decode(s)
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\json\decoder.py", line 337, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\json\decoder.py", line 355, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+</pre>
+                        
+
+                            <pre>json.decoder.JSONDecodeError: Expecting value: line 2 column 58 (char 151)
+</pre>
+                        
+
+                            <pre>test_03_loan (test_invest_flow.TestInvestFlow)执行——>【错误Error】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>8</td>
+                    <td class="TestInvestFlow">TestInvestFlow</td>
+                    <td>test_04register_admin_user</td>
+                    <td>4.创建管理员用户</td>
+                    <td>0.000508s</td>
+                    
+                        <td class="text-danger">错误</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7" class="small text-muted" style=" word-wrap:break-word; word-break:break-all">
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 61, in replace_args
+    self._case['request_data'] = json.loads(self._case['request_data'])
+</pre>
+                        
+
+                            <pre>KeyError: 'request_data'
+</pre>
+                        
+
+                            <pre>
+During handling of the above exception, another exception occurred:
+
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 628, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\testcase\test_invest_flow.py", line 73, in test_04register_admin_user
+    self.flow(item)
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 36, in flow
+    self.process_test_data()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 46, in process_test_data
+    self.replace_args()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 64, in replace_args
+    self.logger.error('{}用例的测试数据格式不正确'.format(self._case['title']))
+</pre>
+                        
+
+                            <pre>KeyError: 'title'
+</pre>
+                        
+
+                            <pre>test_04register_admin_user (test_invest_flow.TestInvestFlow)执行——>【错误Error】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>9</td>
+                    <td class="TestInvestFlow">TestInvestFlow</td>
+                    <td>test_05login_admin_user</td>
+                    <td>5.登录管理员用户</td>
+                    <td>0.00101s</td>
+                    
+                        <td class="text-danger">错误</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7" class="small text-muted" style=" word-wrap:break-word; word-break:break-all">
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 61, in replace_args
+    self._case['request_data'] = json.loads(self._case['request_data'])
+</pre>
+                        
+
+                            <pre>KeyError: 'request_data'
+</pre>
+                        
+
+                            <pre>
+During handling of the above exception, another exception occurred:
+
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 628, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\testcase\test_invest_flow.py", line 82, in test_05login_admin_user
+    self.flow(item)
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 36, in flow
+    self.process_test_data()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 46, in process_test_data
+    self.replace_args()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 64, in replace_args
+    self.logger.error('{}用例的测试数据格式不正确'.format(self._case['title']))
+</pre>
+                        
+
+                            <pre>KeyError: 'title'
+</pre>
+                        
+
+                            <pre>test_05login_admin_user (test_invest_flow.TestInvestFlow)执行——>【错误Error】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>10</td>
+                    <td class="TestInvestFlow">TestInvestFlow</td>
+                    <td>test_06audit_loan</td>
+                    <td>6.审核融资项目</td>
+                    <td>0.00101s</td>
+                    
+                        <td class="text-danger">错误</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7" class="small text-muted" style=" word-wrap:break-word; word-break:break-all">
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 61, in replace_args
+    self._case['request_data'] = json.loads(self._case['request_data'])
+</pre>
+                        
+
+                            <pre>KeyError: 'request_data'
+</pre>
+                        
+
+                            <pre>
+During handling of the above exception, another exception occurred:
+
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 628, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\testcase\test_invest_flow.py", line 90, in test_06audit_loan
+    self.flow(item)
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 36, in flow
+    self.process_test_data()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 46, in process_test_data
+    self.replace_args()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 64, in replace_args
+    self.logger.error('{}用例的测试数据格式不正确'.format(self._case['title']))
+</pre>
+                        
+
+                            <pre>KeyError: 'title'
+</pre>
+                        
+
+                            <pre>test_06audit_loan (test_invest_flow.TestInvestFlow)执行——>【错误Error】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>11</td>
+                    <td class="TestInvestFlow">TestInvestFlow</td>
+                    <td>test_07register_invest_user</td>
+                    <td>7.注册普通投资用户</td>
+                    <td>0.00101s</td>
+                    
+                        <td class="text-danger">错误</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7" class="small text-muted" style=" word-wrap:break-word; word-break:break-all">
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 61, in replace_args
+    self._case['request_data'] = json.loads(self._case['request_data'])
+</pre>
+                        
+
+                            <pre>KeyError: 'request_data'
+</pre>
+                        
+
+                            <pre>
+During handling of the above exception, another exception occurred:
+
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 628, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\testcase\test_invest_flow.py", line 98, in test_07register_invest_user
+    self.flow(item)
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 36, in flow
+    self.process_test_data()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 46, in process_test_data
+    self.replace_args()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 64, in replace_args
+    self.logger.error('{}用例的测试数据格式不正确'.format(self._case['title']))
+</pre>
+                        
+
+                            <pre>KeyError: 'title'
+</pre>
+                        
+
+                            <pre>test_07register_invest_user (test_invest_flow.TestInvestFlow)执行——>【错误Error】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>12</td>
+                    <td class="TestInvestFlow">TestInvestFlow</td>
+                    <td>test_09invest</td>
+                    <td>10.投资</td>
+                    <td>0.000989s</td>
+                    
+                        <td class="text-danger">错误</td>
+                    
+                    <td>
+                        <button type="button" class="btn btn-success btn_info">查看详情</button>
+                    </td>
+                </tr>
+
+                <tr class="test_log">
+
+                    <td colspan="7" class="small text-muted" style=" word-wrap:break-word; word-break:break-all">
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 61, in replace_args
+    self._case['request_data'] = json.loads(self._case['request_data'])
+</pre>
+                        
+
+                            <pre>KeyError: 'request_data'
+</pre>
+                        
+
+                            <pre>
+During handling of the above exception, another exception occurred:
+
+</pre>
+                        
+
+                            <pre>Traceback (most recent call last):
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 59, in testPartExecutor
+    yield
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\AppData\Local\Programs\Python\Python37\lib\unittest\case.py", line 628, in run
+    testMethod()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\testcase\test_invest_flow.py", line 122, in test_09invest
+    self.flow(item)
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 36, in flow
+    self.process_test_data()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 46, in process_test_data
+    self.replace_args()
+</pre>
+                        
+
+                            <pre>  File "C:\Users\Administrator\Desktop\a\api_auto\common\base_case.py", line 64, in replace_args
+    self.logger.error('{}用例的测试数据格式不正确'.format(self._case['title']))
+</pre>
+                        
+
+                            <pre>KeyError: 'title'
+</pre>
+                        
+
+                            <pre>test_09invest (test_invest_flow.TestInvestFlow)执行——>【错误Error】
+</pre>
+                        
+                        
+                    </td>
+                </tr>
+            
+                <tr>
+                    <td>13</td>
                     <td class="TestRecharge">TestRecharge</td>
                     <td>test_recharge_001</td>
                     <td>充值成功-整数</td>
-                    <td>0.293s</td>
+                    <td>0.146s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -384,11 +937,11 @@
                 </tr>
             
                 <tr>
-                    <td>6</td>
+                    <td>14</td>
                     <td class="TestRecharge">TestRecharge</td>
                     <td>test_recharge_002</td>
                     <td>充值成功-1位小数</td>
-                    <td>0.302s</td>
+                    <td>0.153s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -410,11 +963,11 @@
                 </tr>
             
                 <tr>
-                    <td>7</td>
+                    <td>15</td>
                     <td class="TestRecharge">TestRecharge</td>
                     <td>test_recharge_003</td>
                     <td>充值成功-2位小数</td>
-                    <td>0.317s</td>
+                    <td>0.16s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -436,11 +989,11 @@
                 </tr>
             
                 <tr>
-                    <td>8</td>
+                    <td>16</td>
                     <td class="TestRecharge">TestRecharge</td>
                     <td>test_recharge_004</td>
                     <td>充值成功-50万</td>
-                    <td>0.312s</td>
+                    <td>0.148s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -462,11 +1015,11 @@
                 </tr>
             
                 <tr>
-                    <td>9</td>
+                    <td>17</td>
                     <td class="RegisterTestcase">RegisterTestcase</td>
                     <td>test_register_001</td>
                     <td>注册成功-不带类型和昵称</td>
-                    <td>0.52s</td>
+                    <td>0.351s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -488,11 +1041,11 @@
                 </tr>
             
                 <tr>
-                    <td>10</td>
+                    <td>18</td>
                     <td class="RegisterTestcase">RegisterTestcase</td>
                     <td>test_register_002</td>
                     <td>注册成功-带昵称-类型为0</td>
-                    <td>0.541s</td>
+                    <td>0.359s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -514,11 +1067,11 @@
                 </tr>
             
                 <tr>
-                    <td>11</td>
+                    <td>19</td>
                     <td class="RegisterTestcase">RegisterTestcase</td>
                     <td>test_register_003</td>
                     <td>注册成功-不带昵称-类型为1</td>
-                    <td>0.532s</td>
+                    <td>0.336s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -540,11 +1093,11 @@
                 </tr>
             
                 <tr>
-                    <td>12</td>
+                    <td>20</td>
                     <td class="RegisterTestcase">RegisterTestcase</td>
                     <td>test_register_004</td>
                     <td>不输入手机号</td>
-                    <td>0.17s</td>
+                    <td>0.0941s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -566,11 +1119,11 @@
                 </tr>
             
                 <tr>
-                    <td>13</td>
+                    <td>21</td>
                     <td class="RegisterTestcase">RegisterTestcase</td>
                     <td>test_register_005</td>
                     <td>手机号长度10位</td>
-                    <td>0.243s</td>
+                    <td>0.0903s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -592,11 +1145,11 @@
                 </tr>
             
                 <tr>
-                    <td>14</td>
+                    <td>22</td>
                     <td class="RegisterTestcase">RegisterTestcase</td>
                     <td>test_register_006</td>
                     <td>手机号长度12位</td>
-                    <td>0.239s</td>
+                    <td>0.172s</td>
                     
                         <td class="text-success">成功</td>
                     
@@ -746,9 +1299,9 @@
                     show: false
                 },
                 data: [
-                    {value: 14, name: '通过'},
+                    {value: 16, name: '通过'},
                     {value: 0, name: '失败'},
-                    {value: 0, name: '错误'},
+                    {value: 6, name: '错误'},
                     {value: 0, name: '跳过'}
                 ]
             }
@@ -768,8 +1321,8 @@
             {
                 name: '测试结果',
                 type: 'gauge',
-                detail: {formatter: '100.00%'},
-                data: [{value: '100.00', name: '用例通过率'}],
+                detail: {formatter: '72.73%'},
+                data: [{value: '72.73', name: '用例通过率'}],
                 axisLine: {
                     lineStyle: {
                         color: [
